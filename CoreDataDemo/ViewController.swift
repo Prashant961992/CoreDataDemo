@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         if data.count > 0 {
             imageView.image = UIImage(data: data[0].image!)
         }
+        
+        // Code for Delete data
+//        let predicate = NSPredicate(format: "id == %@", "\(history.id ?? "0")")
+//        SBCoreDataAdapter.shared().deleteRecords(PatientLocationHistory.self, search: predicate, context: SBCoreDataAdapter.shared().persistentContainer.viewContext)
     }
     
     @IBAction func actionInsert(_ sender: Any) {
